@@ -1,0 +1,174 @@
+/* Poppins & Dancing Script Font */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    scroll-behavior: smooth;
+
+    /* Color Styles */
+    --background: #ffffff;
+    --complement: rgba(223, 229, 239, 0.5);
+    --accent: #e38035;
+    --text-color: #1a2142;
+    --text-color-light: #5d657b;
+
+    /* Fonts */
+    --dancing-script: "Dancing Script";
+    --poppins: "Poppins";
+
+    /* Font Hierarchy */
+    --heading: 24px;
+    --body-large: 16px;
+    --body-medium: 14px;
+    --body-small: 12px;
+
+    /* Font Weight */
+    --bold: 700;
+    --semibold: 600;
+    --medium: 500;
+    --regular: 400;
+}
+
+body {
+    color: var(--text-color-light);
+}
+
+.main-wrapper {
+    background-color: var(--complement);
+}
+
+.heading {
+    color: var(--text-color);
+}
+
+.sidebar-nav-wrapper {
+    background-color: var(--background);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.accent:hover {
+    color: #e19b66;
+    transition: 0.5s;
+}
+
+.brand {
+    font-family: var(--dancing-script);
+    font-weight: var(--bold);
+}
+
+.text-link {
+    font-size: var(--body-small);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+.divider {
+    color: var(--accent);
+}
+
+.accent-btn {
+    background-color: var(--accent);
+    color: var(--background);
+    font-size: var(--body-medium);
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.accent-btn:hover {
+    color: var(--background);
+}
+
+.search-bar .search-container {
+    position: relative;
+}
+
+.search-bar .search-container input[type="text"] {
+    border-radius: 8px;
+    border: 1px solid #efefef;
+    background: rgba(239, 239, 239, 0.5);
+    padding: 12px 24px 12px 46px;
+    transition: 0.5s;
+}
+
+.search-bar .search-container input[type="text"]:focus {
+    border: 1px solid var(--accent);
+}
+
+.search-bar .search-container i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 17px;
+}
+
+.action-produk i {
+    margin-top: 14px;
+}
+
+.border-accent {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.border-accent i {
+    font-size: 24px;
+    margin: 12px;
+}
+
+.border-accent:hover {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+.accent-simpan {
+    background: var(--accent);
+    color: var(--background);
+    border-radius: 8px;
+}
+
+.accent-simpan input {
+    background-color: transparent;
+    border: none;
+    color: var(--background);
+}
+
+.kembali {
+    margin-top: -16px;
+    background-color: var(--background);
+    border: 1px solid var(--accent);
+    font-size: var(--body-large);
+    border-radius: 8px;
+}
+
+.kembali a {
+    width: 100%;
+    font-size: var(--body-large);
+    color: var(--accent);
+}
+
+/* Sidebar */
+.sidebar-nav .nav-item a:hover {
+    color: var(--accent);
+}
+
+/* Produk */
+.produk .spesifikasi {
+    font-size: var(--body-small);
+}
+
+.produk img {
+    margin: 0;
+    height: 175px;
+}
+
+/* .card-style-2 {
+    border: 1px solid var(--accent);
+} */
