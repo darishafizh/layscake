@@ -54,7 +54,7 @@ Data Pelanggan
                             @foreach ($tampil as $x)
                             <tr>
                                 <td>
-                                  <h6 class="text-sm">#1</h6>
+                                    <h6 class="text-sm">#{{ $loop->iteration }}</h6>
                                 </td>
                                 <td>
                                   <p>{{ $x->nama_pelanggan }}</p>
@@ -73,10 +73,10 @@ Data Pelanggan
                                       </button>
                                       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreAction1">
                                         <li class="dropdown-item">
-                                          <a href="#0" class="text-gray">Edit</a>
+                                          <a href="/editPelanggan/{{ $x->id_pelanggan }}" class="text-gray">Edit</a>
                                         </li>
                                         <li class="dropdown-item">
-                                          <a href="#0" class="text-gray">Hapus</a>
+                                          <a href="/hapusPelanggan/{{ $x->id_pelanggan }}" class="text-gray">Hapus</a>
                                         </li>
                                       </ul>
                                     </div>

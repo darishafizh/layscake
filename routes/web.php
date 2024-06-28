@@ -36,9 +36,10 @@ Route::get('/cariProduk', [ProdukController::class, 'view'])->name('cari.produk'
 Route::get("/viewPelanggan", [PelangganController::class, "view"]);
 Route::get("/insertPelanggan", [PelangganController::class, "insert"]);
 Route::post("/simpanPelanggan", [PelangganController::class, "simpan"]);
-Route::get("/editPelanggan", [PelangganController::class, "edit"]);
-Route::get("/updatePelanggan", [PelangganController::class, "update"]);
-Route::get("/hapusPelanggan", [PelangganController::class, "hapus"]);
+Route::get("/editPelanggan/{id_pelanggan}", [PelangganController::class, "edit"]);
+Route::post("/updatePelanggan/{id_pelanggan}", [PelangganController::class, "update"]);
+Route::get("/hapusPelanggan/{id_pelanggan}", [PelangganController::class, "hapus"]);
+Route::get('/cariPelanggan', [PelangganController::class, 'view'])->name('cari.pelanggan');
 
 // =============== Penjualan ===============
 Route::get("/viewPenjualan", [PenjualanController::class, "view"]);
