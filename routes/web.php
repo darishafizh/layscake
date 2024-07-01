@@ -4,6 +4,7 @@ use App\Http\Controllers\LayscakeController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\PenjualanController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
+Route::get("/register", [LayscakeController::class, "register"]);
+Route::get("/login", [LoginController::class, "index"]);
 Route::get("/Layscake", [LayscakeController::class, "dashboard"]);
 
 // =============== Produk ===============
@@ -48,3 +48,4 @@ Route::post("/simpanPenjualan", [PenjualanController::class, "simpan"]);
 Route::get("/editPenjualan", [PenjualanController::class, "edit"]);
 Route::get("/updatePenjualan", [PenjualanController::class, "update"]);
 Route::get("/hapusPenjualan", [PenjualanController::class, "hapus"]);
+Route::get('/produk/{id_produk}', [PenjualanController::class, 'getProduk']);

@@ -14,19 +14,16 @@ class Penjualan extends Model
     public $timestamps = false;
     protected $keyType = 'string';
 
-    // Relasi dengan tabel Produk
     public function produk()
     {
         return $this->belongsTo(Produk::class, 'id_produk', 'id_produk');
     }
 
-    // Relasi dengan tabel pelanggan
     public function pelanggan()
     {
         return $this->belongsTo(Pelanggan::class, 'id_pelanggan', 'id_pelanggan');
     }
 
-    // Relasi dengan tabel user
     public function user()
     {
         return $this->belongsTo(User::class, 'id_user', 'id_user');

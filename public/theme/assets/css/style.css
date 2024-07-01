@@ -169,6 +169,8 @@ body {
     height: 175px;
 }
 
-/* .card-style-2 {
-    border: 1px solid var(--accent);
-} */
+/* Penjualan */
+.table-penjualan img {
+    height: 40px;
+    border-radius: 4px;
+}

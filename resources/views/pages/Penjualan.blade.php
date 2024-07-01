@@ -31,7 +31,7 @@ Data Penjualan
             <!-- End Title -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="table-wrapper table-responsive">
+                    <div class="table-wrapper table-responsive table-penjualan">
                         <table class="table striped-table">
                           <thead>
                             <tr>
@@ -62,8 +62,8 @@ Data Penjualan
                             @foreach ($tampil as $x)
                             <tr>
                                 <td>
-                                  <div class="product">
-                                    <div class="image">
+                                  <div class="product d-flex align-items-center">
+                                    <div class="image me-3">
                                       <img src="{{ $x->produk->foto_produk }}" alt="" />
                                     </div>
                                     <p class="text-sm">{{ $x->produk->nama_produk }}</p>
