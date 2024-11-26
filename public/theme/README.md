@@ -1,74 +1,123 @@
-# PlainAdmin - Free Vanilla JS Bootstrap 5 Admin Dashboard Template
+<p align="center">
+  <a href="https://getstisla.com">
+    <img src="https://avatars2.githubusercontent.com/u/45754626?s=75&v=4" alt="Stisla logo" width="75" height="75">
+  </a>
+</p>
 
-PlainAdmin is a free and open-source **Vanilla JS admin dashboard template** based on Bootstrap 5 that comes with 5 unique dashboard variations, 300+ essential dashboard components, pages, UI elements, charts, graphs, application UI pages, and more. to provide everything you need to build a data-rich backend or admin panel for almost any sort of web app.
+<h1 align="center">Stisla</h1>
 
-[![plainadmindemo](https://github.com/PlainAdmin/plain-free-bootstrap-admin-template/blob/main/plainadmin.jpg)](https://demo.plainadmin.com/)
+<span align="center">
 
+**Stisla** is a Free Bootstrap Admin Template which will help you to speed up your project and design your own dashboard UI.
 
-### [🚀 View Demo](https://demo.plainadmin.com/)
+[![tag](https://img.shields.io/github/tag/stisla/stisla.svg)](https://github.com/stisla/stisla) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/stisla/stisla/blob/master/LICENSE) [![Issue](https://img.shields.io/github/issues/stisla/stisla)](https://img.shields.io/github/issues/stisla/stisla) [![Forks](https://img.shields.io/github/forks/stisla/stisla)](https://img.shields.io/github/forks/stisla/stisla) [![Stars](https://img.shields.io/github/stars/stisla/stisla)](https://img.shields.io/github/stars/stisla/stisla)
 
-### [✨ Visit Website](https://plainadmin.com/)
+</span>
 
-### [⬇️ Download Now](https://plainadmin.com/download)
+<br>
 
-### [📄 Documentation/Installation](https://plainadmin.com/docs/)
+<p align="center">
+  <a href="https://getstisla.com">Homepage</a>
+  •
+  <a href="https://getstisla.com/getting-started">Getting Started</a>
+  •
+  <a href="https://demo.getstisla.com" target="_new">Demo</a>
+  •
+  <a href="https://getstisla.com/docs">Documentation</a>
+  •
+  <a href="https://getstisla.com/blog">Blog</a>
+  •
+  <a href="https://getstisla.com/support">Issue</a>
+</p>
 
-### [⚡ PRO Version](https://plainadmin.com/pricing)
+<br>
 
+[![Stisla Preview](https://camo.githubusercontent.com/2135e0f6544a7286a3412cdc3df32d47fc91b045/68747470733a2f2f692e6962622e636f2f3674646d6358302f323031382d31312d31312d31352d33352d676574737469736c612d636f6d2e706e67)](https://getstisla.com)
 
-It comes with a minimal UI design that suits almost any kind of web project and offers the best possible user experience. PlainAdmin comes with SCSS files, an organized codebase, gulp support for efficient workflow, rich documentation, and everything else that you can expect from a modern admin template.
+## Table of Contents
 
-PlainAdmin is built with vanilla Javascript (no jQuery), Bootstrap 5 and the simplest possible way to make it easy to maintain and easy to port your back-end projects.
+- [Table of Contents](#table-of-contents)
+- [Quick start](#quick-start)
+- [Development Steps](#development-steps)
+- [Roadmap](#roadmap)
+- [Stisla Community Projects](#stisla-community-projects)
+- [Featured In](#featured-in)
+- [Tutorials](#tutorials)
+  - [Indonesia Community Tutorials](#indonesia-community-tutorials)
+  - [Global Community Tutorials](#global-community-tutorials)
+- [License](#license)
+- [Supports](#supports)
 
-### [👉 Check out our Admin Template for Tailwind CSS](https://tailadmin.com)
+## Quick start
 
-If you are looking for a high-quality free admin template that comes with all essential dashboard components and features then, PlainAdmin is the perfect choice for you.
+Several quick start options are available:
 
-## [📄 Documentation](https://plainadmin.com/docs/)
-- [Installation](https://plainadmin.com/docs/#installation)
-- [Quick Start](https://plainadmin.com/docs/#quick-start)
-- [Layout and Theme](https://plainadmin.com/docs/#layout-theme)
-- [Colors](https://plainadmin.com/docs/#colors)
-- [Alerts](https://plainadmin.com/docs/#alerts)
-- [Buttons](https://plainadmin.com/docs/#buttons)
-- [Cards](https://plainadmin.com/docs/#cards)
-- [Tabs](https://plainadmin.com/docs/#tabs)
-- [Forms](https://plainadmin.com/docs/#forms)
-- [Icons](https://plainadmin.com/docs/#icons)
-- [Tables](https://plainadmin.com/docs/#tables)
-- [Credits](https://plainadmin.com/docs/#credits)
+- Clone the repo: `git clone https://github.com/stisla/stisla.git`
+- Run `cd` to the newly created `/stisla` directory
+- Install [yarn](https://yarnpkg.com) first if you don't have it in your machine
+- Run the `yarn` command
+- Done
 
-### Update Logs - 2.0 :
-- Rebranded the entire template.
-- Updated the style guide
-- The sidebar menu icons have been updated.
-- The overall design of the sidebar has been enhanced.
-- The header menu icons have been updated.
-- The design of the header dropdown has been updated.
-- Additional buttons have been added to the Button Page.
-- Updated essential dependencies
-- The charts code has been adjusted to accommodate the updated version.
-- UX and UI enhancements
+Read the [documentation page](https://getstisla.com/docs) for more information on the framework contents, templates and examples, and more.
 
-### Update Logs - 1.2 :
-- Added Kanban (App) [PRO]
-- Added File Manager (App) [PRO]
-- Dependencies updated
-- FullCalender updated
+## Development Steps
 
-### Update Logs - 1.1.2 :
-- FullCalender updated
-- Dependencies updates
+1. Clone the repo: `git clone https://github.com/stisla/stisla.git` to your local path.
+2. Make sure you have [yarn](https://yarnpkg.com) installed to your machine.
+3. Run the `yarn` command to install development dependencies.
+4. Run the `yarn dist` command to build `pages/` directory.
+5. Run the `yarn dev` command to start developing.
 
-### Update Logs - 1.1.1 :
-- Updated to v5.1.3 (Latest)
-- Fixed minor bugs
-- Changed primary color
-- Multiple sidebar variations
-- Improved UX
-- Optimized codebase
+⚠️ For production use, it's recommended to reinstall your packages with `yarn install --prod` after building `/pages` with `yarn dist`.
 
-### Update Logs - 1.1 :
-- Updated to Bootstrap 5.1.1
-- Fixed minor bugs
-- Enhanced the UI and Improved Typography
+## Roadmap
+
+You can find the **Stisla** road map here: [Stisla Roadmap](https://trello.com/b/M8TMnehE/stisla-roadmap)
+
+## Stisla Community Projects
+
+- [Rails](https://github.com/SunDi3yansyah/stisla-rails)
+- [CodeIgniter](https://github.com/KhidirDotID/stisla-codeigniter)
+- [Laravel](https://github.com/rehmatworks/stisla-laravel)
+- [Laravel 8 - Stisla](https://github.com/ngodingbang/laravel-stisla-starter)
+- [Laravel 9 - Stisla](https://github.com/edikurniawan-dev/laravel-stisla)
+- [Laravel UI Preset](https://github.com/poteto-dev/laravel-ui-stisla)
+- [Jekyll](https://github.com/SunDi3yansyah/stisla-jekyll)
+- [YII2](https://github.com/piantgrunger/yii2-stisla)
+- [Django](https://github.com/bimbims125/stisla-django.git)
+- [Flask](https://github.com/antheiz/stisla-flask)
+- **and more...**
+
+## Featured In
+
+- [app.whatspie.com](https://app.whatspie.com) - Enterprise ready unofficial WhatsApp API and BOT Service, allow you to sending notification to customer using WhatsApp API from your App
+- [kredibel.co.id](https://kredibel.co.id)- Kredibel is a site that can identify whether someone has the potential to commit fraud or not
+
+## Tutorials
+
+### Indonesia Community Tutorials
+
+- [Stisla Introduction by Nauval](https://www.youtube.com/watch?v=dvnqtOUvGFc)
+- [Integrate Stisla with Laravel by Mulai Dari NULL](https://www.youtube.com/watch?v=4-kdAxALCPc)
+- [Integrate Stisla with CodeIgniter 4 by Juvinal Man](https://www.youtube.com/watch?v=np4LsQNcJbg)
+- [Integrate Stisla with CodeIgniter 4 by YukCoding Media](https://www.youtube.com/watch?v=Kre5kJIufhw)
+
+### Global Community Tutorials
+
+- [How to setup Stisla in Laravel by Laravel Package Tutorial](https://www.youtube.com/playlist?list=PL0wCC44AhrC14hkSMdczlVaZvnD0WSdGv)
+
+## License
+
+**Stisla** is licensed under the [MIT License](LICENSE)
+
+## Supports
+
+Thanks to BrowserStack for their support on this open-source project!
+
+<a href="https://www.browserstack.com">
+  <img src="https://getstisla.com/svg/Browserstack-logo.svg" alt="BrowserStack" width="250">
+</a>
+
+---
+
+Stisla is created by [Nauval](http://nauv.al) ([Twitter](https://twitter.com/mhdnauvalazhar)). You can support the author by donation [here](https://www.buymeacoffee.com/mhd).
