@@ -27,12 +27,16 @@ Route::group(['prefix' => 'dashboard'], function () {
 
 Route::group(['prefix' => 'product'], function () {
     Route::get("/", [ProductController::class, "index"])->name('product.index');
+    Route::get("data-ajax", [ProductController::class, "data_ajax"])->name('product.data_ajax');
+    Route::get("create", [ProductController::class, "create"])->name('product.create');
 });
 
 Route::group(['prefix' => 'pelanggan'], function () {
     Route::get("/", [PelangganController::class, "index"])->name('pelanggan.index');
+    Route::get("data-ajax", [PelangganController::class, "data_ajax"])->name('pelanggan.data_ajax');
 });
 
 Route::group(['prefix' => 'penjualan'], function () {
     Route::get("/", [PenjualanController::class, "index"])->name('penjualan.index');
+    Route::get("data-ajax", [PenjualanController::class, "data_ajax"])->name('penjualan.data_ajax');
 });

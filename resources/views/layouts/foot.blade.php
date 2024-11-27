@@ -19,7 +19,6 @@
 <script src="{{ asset('theme/assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js') }}"></script>
 <script src="{{ asset('theme/assets/modules/jquery-ui/jquery-ui.min.js') }}"></script>
 
-
 <!-- Page Specific JS File -->
 <script src="{{ asset('theme/assets/js/page/index.js') }}"></script>
 <script src="{{ asset('theme/assets/js/page/modules-datatables.js') }}"></script>
@@ -28,3 +27,5 @@
 <!-- Template JS File -->
 <script src="{{ asset('theme/assets/js/scripts.js') }}"></script>
 <script src="{{ asset('theme/assets/js/custom.js') }}"></script>
+
+@stack('script')
