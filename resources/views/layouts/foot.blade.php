@@ -22,6 +22,7 @@
 <!-- Page Specific JS File -->
 <script src="{{ asset('theme/assets/js/page/index.js') }}"></script>
 <script src="{{ asset('theme/assets/js/page/modules-datatables.js') }}"></script>
+<script src="{{ asset('theme/assets/js/page/bootstrap-modal.js') }}"></script>
 
 
 <!-- Template JS File -->

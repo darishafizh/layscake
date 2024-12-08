@@ -28,4 +28,10 @@ class PelangganController extends Controller
             ->rawColumns(['checkbox'])
             ->make(true);
     }
+
+    public function create()
+    {
+        $data['title'] = 'Create New Pelanggan';
+        return view('pelanggan.create', $data);
+    }
 }

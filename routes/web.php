@@ -29,11 +29,14 @@ Route::group(['prefix' => 'product'], function () {
     Route::get("/", [ProductController::class, "index"])->name('product.index');
     Route::get("data-ajax", [ProductController::class, "data_ajax"])->name('product.data_ajax');
     Route::get("create", [ProductController::class, "create"])->name('product.create');
+    Route::post("store", [ProductController::class, "store"])->name('product.store');
 });
 
 Route::group(['prefix' => 'pelanggan'], function () {
     Route::get("/", [PelangganController::class, "index"])->name('pelanggan.index');
     Route::get("data-ajax", [PelangganController::class, "data_ajax"])->name('pelanggan.data_ajax');
+    Route::get("create", [PelangganController::class, "create"])->name('pelanggan.create');
+    Route::get("store", [PelangganController::class, "store"])->name('pelanggan.store');
 });
 
 Route::group(['prefix' => 'penjualan'], function () {

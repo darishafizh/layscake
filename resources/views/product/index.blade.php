@@ -5,7 +5,7 @@
         <h1>{{ $title }}</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-            <div class="breadcrumb-item">Product</div>
+            <div class="breadcrumb-item">{{ $title }}</div>
         </div>
     </div>
 
@@ -19,6 +19,22 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
+                    <div class="card-header">
+                        <h4></h4>
+                        <div class="card-header-action">
+                            <a href="{{ route('product.create') }}" class="btn btn-icon icon-left btn-success"
+                                id="btn-create"><i class="fas fa-plus"></i>Create</a>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Action</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item has-icon">
+                                        Edit</a>
+                                    <a href="#" class="dropdown-item has-icon">
+                                        Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped product-table" id="table-2">
