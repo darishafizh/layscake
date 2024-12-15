@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pelanggan;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Yajra\DataTables\Facades\DataTables;
 
 class PelangganController extends Controller
@@ -33,5 +35,22 @@ class PelangganController extends Controller
     {
         $data['title'] = 'Create New Pelanggan';
         return view('pelanggan.create', $data);
+    }
+
+    public function store(Request $request)
+    {
+        try {
+            $pelanggan = new Pelanggan();
+            $pelanggan->nama = $request->nama;
+            $pelanggan->telephone = $request->telepon;
+            $pelanggan->alamat = $request->alamat;
+            $pelanggan->save();
+
+            DB::commit();
+        } catch (Exception $e) {
+            DB::rollBack();
+            return response()->json(['status' => 'error', 'message' => $e->getMessage()], 422);
+        }
+        return response()->json(['status' => 'success', 'message' => __('Pelanggan Successfully Created!')], 200);
     }
 }

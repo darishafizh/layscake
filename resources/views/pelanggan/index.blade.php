@@ -19,6 +19,22 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
+                    <div class="card-header">
+                        <h4></h4>
+                        <div class="card-header-action">
+                            <a href="javascript:void(0)" class="btn btn-icon icon-left btn-success" id="modal-create"><i
+                                    class="fas fa-plus"></i>Create</a>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Action</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item has-icon">
+                                        Edit</a>
+                                    <a href="#" class="dropdown-item has-icon">
+                                        Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped pelanggan-table" id="table-2">
@@ -71,11 +87,6 @@
                     [10, 25, 50, 100, 250, 500]
                 ],
                 autoWidth: "100%",
-                // scrollX: true,
-                "initComplete": function(settings, json) {
-                    $('.pelanggan-table').wrap(
-                        "<div style='overflow:auto; width:100%;position:relative;'></div>");
-                },
                 columns: [{
                         data: 'checkbox',
                         name: 'checkbox',
@@ -97,5 +108,53 @@
                 "ordering": false
             });
         }
+
+        $(document).on('click', '#modal-create', function() {
+            $.ajax({
+                url: "{{ route('pelanggan.create') }}",
+                type: 'GET',
+                success: function(response) {
+                    $("#modal-create").fireModal({
+                        title: 'Create New Pelanggan',
+                        body: response,
+                    });
+                },
+                error: function(xhr) {
+                    console.error("Error loading modal content: ", xhr.responseText);
+                    alert("Failed to load modal content.");
+                }
+            });
+        });
+
+        $(document).on('click', '#submit-pelanggan', function() {
+            const nama = $('#nama').val()
+            const telepon = $('#telepon').val()
+            const alamat = $('#alamat').val()
+
+            $.ajax({
+                url: "{{ route('pelanggan.store') }}",
+                type: 'GET',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    nama: nama,
+                    telepon: telepon,
+                    alamat: alamat
+                },
+                success: function(response) {
+                    if ($.fn.DataTable.isDataTable('.pelanggan-table')) {
+                        $('.pelanggan-table').dataTable().fnDestroy();
+                    }
+                    console.log("response.message");
+                    $('.modal').modal('hide');
+                    loadDataAjax()
+                    success(response.message)
+                },
+                error: function(err) {
+                    $('.modal').modal('hide');
+                    console.log(err.responseJSON.message);
+                    error(err.responseJSON.message)
+                }
+            });
+        });
     </script>
 @endpush

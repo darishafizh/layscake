@@ -1,8 +1,31 @@
-/**
- *
- * You can write your JS code here, DO NOT touch the default style file
- * because it will make it harder for you to update.
- * 
- */
+function info(msg) {
+    iziToast.info({
+        title: "Info",
+        message: msg,
+        position: "topRight",
+    });
+}
 
-"use strict";
+function success(msg) {
+    iziToast.success({
+        title: "Success",
+        message: msg,
+        position: "topRight",
+    });
+}
+
+function warning(msg) {
+    iziToast.warning({
+        title: "Warning",
+        message: msg,
+        position: "topRight",
+    });
+}
+
+function error(msg) {
+    iziToast.error({
+        title: "Error",
+        message: msg,
+        position: "topRight",
+    });
+}
